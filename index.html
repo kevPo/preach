@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PREACH! is a new podcast for preachers. Get notified when it launches."
+    />
+    <meta property="og:title" content="PREACH!" />
+    <meta
+      property="og:description"
+      content="A new podcast for preachers. Sign up to be notified."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f8f7f2" />
+    <title>PREACH! | Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Newsreader:opsz,wght@6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-stack" aria-labelledby="launch-title">
+        <header class="masthead" aria-label="PREACH coming soon">
+          <h1>PREACH<span>!</span></h1>
+        </header>
+
+        <div class="hero-content">
+          <h2 id="launch-title">A new podcast for preachers.</h2>
+
+          <form
+            class="signup-form"
+            name="preach-notify"
+            method="POST"
+            action="/success/"
+            data-netlify="true"
+            netlify-honeypot="company"
+          >
+            <input type="hidden" name="form-name" value="preach-notify" />
+            <p class="hidden-field" aria-hidden="true">
+              <label>
+                Leave this blank
+                <input name="company" tabindex="-1" autocomplete="off" />
+              </label>
+            </p>
+
+            <div class="signup-copy">
+              <label for="email">Keep me posted</label>
+            </div>
+            <div class="form-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              />
+            <button type="submit">Join list</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <p class="verse">
+        "It pleased God by the foolishness of preaching to save them that believe."
+        <cite>1 Corinthians 1:21</cite>
+      </p>
+    </main>
+  </body>
+</html>
